@@ -1,4 +1,5 @@
 # POSTAL3 AVR-USB Programmer
+
 ### Screen Flash Tool
 
 A custom-engineered hardware tool developed for screen firmware maintenance, electronic repair, and embedded debugging applications. This programmer facilitates reliable reading, writing, and flashing operations for various EEPROM, Flash, and EMMC chips utilizing standard communication protocols and board-level In-System Programming (ISP).
@@ -7,18 +8,18 @@ A custom-engineered hardware tool developed for screen firmware maintenance, ele
 
 ## Table of Contents
 
-- [Key Features & Specifications](#key-features--specifications)
-- [Applications](#applications)
-- [Requirements](#requirements)
-- [Tested Devices](#tested-devices)
-- [Hardware Overview](#hardware-overview)
-- [System Setup & Driver Configuration](#system-setup--driver-configuration)
-- [POSTAL3 Software Configuration & Validation](#postal3-software-configuration--validation)
-- [Pinout Mapping (EMMC & JTAG)](#pinout-mapping-emmc--jtag)
-- [Safety & Electrical Notes](#safety--electrical-notes)
-- [Versioning](#versioning)
-- [Repository Structure](#repository-structure)
-- [License](#license)
+* [Key Features & Specifications](#key-features--specifications)
+* [Applications](#applications)
+* [Requirements](#requirements)
+* [Tested Devices](#tested-devices)
+* [Hardware Overview](#hardware-overview)
+* [System Setup & Driver Configuration](#system-setup--driver-configuration)
+* [POSTAL3 Software Configuration & Validation](#postal3-software-configuration--validation)
+* [Pinout Mapping (EMMC & JTAG)](#pinout-mapping-emmc--jtag)
+* [Safety & Electrical Notes](#safety--electrical-notes)
+* [Versioning](#versioning)
+* [Repository Structure](#repository-structure)
+* [License](#license)
 
 ---
 
@@ -28,10 +29,11 @@ A custom-engineered hardware tool developed for screen firmware maintenance, ele
 
 * **Board-Level ISP:** Enables firmware flashing via exposed test pads or auxiliary interface routing present on some board designs, bypassing chip desoldering where ISP test points or routing pads are available on the target board.
 
-* **USB Connectivity:** Integrated with the **CP210x USB-to-UART Bridge** / **USB XPRESS - X2** for stable serial data transmission.  
-*(Note: USB XPRESS - X2 refers to the internal USB interface implementation used in this hardware revision and is not a standalone external chipset).*
+* **USB Connectivity:** Integrated with the **CP210x USB-to-UART Bridge** / **USB XPRESS - X2** for stable serial data transmission.
+  *(Note: USB XPRESS - X2 refers to the internal USB interface implementation used in this hardware revision and is not a standalone external chipset).*
 
 * **Hardware Modularity:**
+
   * Optimized power delivery circuit with regulated voltage rails for stable operation.
   * Custom onboard jumpers for VGA & HDMI sockets to dynamically route `SDA` and `SCL` configurations based on the target board's pin layout.
   * Manual routing options for VGA pin configurations (switching between `4-11-5` and `12-15-5`) and HDMI configurations (switching between `16-15-17` and `2-14-17`) to accommodate varying manufacturer designs.
