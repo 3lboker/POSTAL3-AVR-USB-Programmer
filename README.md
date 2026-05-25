@@ -243,7 +243,7 @@ Including reverse routing compatibility.
 
 ## Additional Features
 
-The programmer supports reading and writing flash and EEPROM chips used in display boards without removing them, using the dedicated VGA or HDMI sockets.
+The programmer supports board-level flash and EEPROM maintenance workflows through ISP access points where available on supported display boards., using the dedicated VGA or HDMI sockets.
 
 It also includes infrared (IR) transmit and receive functionality, allowing remote control code communication and modification.
 
